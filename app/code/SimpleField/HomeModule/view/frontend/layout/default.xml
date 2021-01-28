@@ -7,8 +7,24 @@
 -->
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="SimpleField_HomeModule::css/main.css"/>
+        <script src="SimpleField_HomeModule::js/down.js"/>
+    </head>
     <body>
-        <block class="Magento\Framework\View\Element\Template" name="new_block" template="Magento_Theme::html/newBlock.phtml" after="-">
-        </block>
+        <referenceBlock name="header" remove="true">
+        </referenceBlock>
+        <referenceContainer name="header-wrapper" remove="true"/>
+        <referenceContainer name="header.panel">
+            <referenceBlock name="header.links" remove="true"/>
+            <referenceBlock name="skip_to_content" remove="true"/>
+            <referenceContainer name="header.panel">
+                <block class="SimpleField\HomeModule\Block\Html\NewBlock"
+                       name="new-block"
+                       template="SimpleField_HomeModule::html/newBlock.phtml"
+                >
+                </block>
+            </referenceContainer>
+        </referenceContainer>
     </body>
 </page>

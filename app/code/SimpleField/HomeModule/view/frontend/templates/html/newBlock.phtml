@@ -1,0 +1,40 @@
+<?php
+/**
+ * @var NewBlock $block
+ */
+
+use SimpleField\HomeModule\Block\Html\NewBlock;
+
+$kosten = $block->getKostenloser();
+$express = $block->getExpress();
+$number = $block->getNumber();
+
+?>
+
+
+<div>
+    <strong><?php echo $kosten ?></strong>
+    <strong><?php echo $express ?></strong>
+    <div class="right-header">
+        <strong><?php echo $number ?></strong>
+        <ul class="support" id="support">
+            <strong><span class="drop1" id="drop1">HILFE & KONTAKT</span></strong>
+            <ul id="downup1" class="downup">
+                <a href="">Kontakt</a>
+                <a href="">Newsletter</a>
+                <a href="">Zahlungsarten</a>
+
+            </ul>
+        </ul>
+        <ul class="lang" id="lang">
+            <strong><span class="drop2" id="drop2">LANGUAGE</span></strong>
+            <ul id="downup2" class="downup">
+                    <a href="">Polish</a>
+                    <a href="">German</a>
+                    <a href="">English</a>
+            </ul>
+        </ul>
+    </div>
+</div>
+
+
