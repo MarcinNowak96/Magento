@@ -18,8 +18,6 @@ class NewBlock extends Template
     public function __construct(Template\Context $context, array $data = [])
     {
         parent::__construct($context, $data);
-//        var_dump($data);
-//        exit();
     }
     public function getKostenloser(): string
     {

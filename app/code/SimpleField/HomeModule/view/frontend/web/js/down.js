@@ -1,6 +1,5 @@
 require(['jquery'], function ($) {
-    $('.menu').hover(function () {
+    $('[data-dropdown-menu="true"]').hover(function (){
         ($(this).find('ul')).toggle();
     });
 });
-

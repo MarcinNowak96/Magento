@@ -15,9 +15,9 @@ $number = $block->getNumber();
 <div>
     <strong><?php echo $kosten ?></strong>
     <strong><?php echo $express ?></strong>
-    <div class="right-header">
+    <div id="downup" class="down">
         <strong><?php echo $number ?></strong>
-        <ul class="menu" id="support">
+        <ul class="menu" id="support" data-dropdown-menu="true">
             <strong><span class="drop" id="drop1">HILFE & KONTAKT</span></strong>
             <ul id="downup1" class="downup">
                 <li><a href="">Kontakt</a></li>
@@ -25,8 +25,8 @@ $number = $block->getNumber();
                 <li><a href="">Zahlungsarten</a></li>
             </ul>
         </ul>
-        <ul class="menu" id="lang">
-            <strong><span class="drop" id="drop2">LANGUAGE</span></strong>
+        <ul class="menu" id="lang" data-dropdown-menu="true">
+            <strong><span class="drop" id="drop2" data-dropdown-menu="true">LANGUAGE</span></strong>
             <ul id="downup2" class="downup">
                 <li><a href="">Polish</a></li>
                 <li><a href="">German</a></li>
@@ -35,13 +35,13 @@ $number = $block->getNumber();
         </ul>
     </div>
 </div>
-<!---->
-<!--<script type="text/x-magento-init">-->
-<!--    {-->
-<!--          "*": {-->
-<!--            down: 'SimpleField_HomeModule::js/down.js',-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
+
+<script type="text/x-magento-init">
+    {
+          "#downup": {
+            "down":{}
+        }
+    }
+</script>
 
 

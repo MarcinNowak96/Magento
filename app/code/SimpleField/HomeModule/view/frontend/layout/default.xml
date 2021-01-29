@@ -9,12 +9,12 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="SimpleField_HomeModule::css/main.css"/>
-        <script src="SimpleField_HomeModule::js/down.js"/>
+<!--        <script src="SimpleField_HomeModule::js/down.js"/>-->
     </head>
     <body>
         <referenceBlock name="header" remove="true">
         </referenceBlock>
-        <referenceContainer name="header-wrapper" remove="true"/>
+
         <referenceContainer name="header.panel">
             <referenceBlock name="header.links" remove="true"/>
             <referenceBlock name="skip_to_content" remove="true"/>
