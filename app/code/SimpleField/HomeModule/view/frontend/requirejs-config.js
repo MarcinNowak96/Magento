@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            downup: 'SimpleFiled_HomeModule/js/downup',
+            down: 'SimpleField_HomeModule/js/down',
         }
     }
 };
