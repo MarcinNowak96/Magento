@@ -15,16 +15,25 @@ class NewBlock extends Template
 
     protected $_template = 'SimpleField_HomeModule::html/newBlock.phtml';
     protected $cssClass;
-
+    protected $days;
     public function __construct(Template\Context $context, array $data = [])
     {
         parent::__construct($context, $data);
         $this->cssClass = $data['css_class'];
+        $this->days = $data['css_class_days'];
+        var_dump($this->days);
+        exit();
     }
 
     public function getCssClass()
     {
         return $this->cssClass;
+    }
+
+    public function getDays()
+    {
+
+        return $this->days;
     }
 
     public function getKostenloser(): string

@@ -8,7 +8,7 @@
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-<!--        <css src="SimpleField_HomeModule::css/main.css"/>-->
+        <css src="SimpleField_HomeModule::css/main.css"/>
     </head>
     <body>
         <referenceBlock name="header" remove="true">
@@ -22,7 +22,18 @@
                        name="new-block"
                        template="SimpleField_HomeModule::html/newBlock.phtml">
                     <arguments>
-                        <argument name="css_class" xsi:type="string">main</argument>
+<!--                        kolor czcionki-->
+                        <argument name="css_class" xsi:type="string">menu</argument>
+<!--                        dni tygodnia-->
+                        <argument name="css_class_days" xsi:type="array">
+                            <item name="firstDay" xsi:type="string">Monday</item>
+                            <item name="secondDay" xsi:type="string">Tuesday</item>
+                            <item name="thirdDay" xsi:type="string">Wednesday</item>
+                            <item name="fourthDay" xsi:type="string">Thursday</item>
+                            <item name="fifthDay" xsi:type="string">Friday</item>
+                            <item name="sixthDay" xsi:type="string">Saturday</item>
+                            <item name="seventhDay" xsi:type="string">Sunday</item>
+                        </argument>
                     </arguments>
                 </block>
             </referenceContainer>
