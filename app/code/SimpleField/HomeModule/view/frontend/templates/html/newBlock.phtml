@@ -8,11 +8,10 @@ use SimpleField\HomeModule\Block\Html\NewBlock;
 $kosten = $block->getKostenloser();
 $express = $block->getExpress();
 $number = $block->getNumber();
-
+$cssClass = $block->getCssClass()
 ?>
 
-
-<div>
+<div class="<?php echo $cssClass ?>">
     <strong><?php echo $kosten ?></strong>
     <strong><?php echo $express ?></strong>
     <div id="downup" class="down">
