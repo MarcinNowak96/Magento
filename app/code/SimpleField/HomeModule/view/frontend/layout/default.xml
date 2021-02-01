@@ -8,8 +8,7 @@
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <css src="SimpleField_HomeModule::css/main.css"/>
-<!--        <script src="SimpleField_HomeModule::js/down.js"/>-->
+<!--        <css src="SimpleField_HomeModule::css/main.css"/>-->
     </head>
     <body>
         <referenceBlock name="header" remove="true">
@@ -21,8 +20,10 @@
             <referenceContainer name="header.panel">
                 <block class="SimpleField\HomeModule\Block\Html\NewBlock"
                        name="new-block"
-                       template="SimpleField_HomeModule::html/newBlock.phtml"
-                >
+                       template="SimpleField_HomeModule::html/newBlock.phtml">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">main</argument>
+                    </arguments>
                 </block>
             </referenceContainer>
         </referenceContainer>
