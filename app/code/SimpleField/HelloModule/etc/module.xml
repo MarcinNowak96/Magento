@@ -6,9 +6,9 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="SimpleField_HomeModule">
+    <module name="SimpleField_HelloModule" >
 <!--        <sequence>-->
-<!--            <module name="SimpleField_HelloModule"/>-->
+<!--            <module name="SimpleField_HomeModule"/>-->
 <!--        </sequence>-->
     </module>
 </config>
